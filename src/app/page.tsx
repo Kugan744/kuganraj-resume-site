@@ -1,103 +1,88 @@
-import Image from "next/image";
+// pages/index.js
+import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <Head>
+        <title>Kuganraj Selvaraj - Resume</title>
+        <meta name="description" content="AI Engineer | Software Developer | Resume" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <main className="min-h-screen bg-gray-100 p-6 font-sans">
+        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6">
+          <h1 className="text-3xl font-bold text-center mb-2">Kuganraj Selvaraj</h1>
+          <p className="text-center text-gray-600">AI Engineer | Software Developer | Open to Remote/Singapore</p>
+
+          <div className="mt-6">
+            <h2 className="text-xl font-semibold">Contact</h2>
+            <p>📞 +6019-4450299</p>
+            <p>✉️ kugan3875@gmail.com</p>
+            <p>📍 Penang, Malaysia</p>
+            <p>🔗 <a href="https://linkedin.com/in/kugan-raj-5069022b7" className="text-blue-500">LinkedIn Profile</a></p>
+          </div>
+
+          <div className="mt-6">
+            <h2 className="text-xl font-semibold">Profile</h2>
+            <p>
+              AI-focused graduate with a Bachelor's in Intelligent Computing (USM). Delivered real-time automation tools,
+              AI vision systems, and robust backend solutions at Jabil and Flex. Seeking software roles in Singapore or remote
+              teams to innovate and solve high-impact problems.
+            </p>
+          </div>
+
+          <div className="mt-6">
+            <h2 className="text-xl font-semibold">Technical Skills</h2>
+            <ul className="list-disc list-inside">
+              <li>Languages: Python, Java, C++, C#, JS, HTML5, CSS, PHP, SQL, Flutter, R</li>
+              <li>Frameworks/Tools: TensorFlow, Keras, Docker, MQTT, Azure DevOps, OpenMP</li>
+              <li>Cloud: Amazon EC2, Google Cloud</li>
+              <li>Soft Skills: Critical thinking, problem solving, adaptability, leadership</li>
+            </ul>
+          </div>
+
+          <div className="mt-6">
+            <h2 className="text-xl font-semibold">Professional Experience</h2>
+            <h3 className="font-semibold">Jabil Penang – Test Engineer (Oct 2024 – Present)</h3>
+            <ul className="list-disc list-inside">
+              <li>Built Python tool to capture MQTT data as .json and image</li>
+              <li>Created C# GUI app for Raspberry Pi & robot arm control</li>
+              <li>Led ML-based vision model training & deployment</li>
+              <li>Mentored 4 interns, led full-stack web projects</li>
+            </ul>
+            <h3 className="font-semibold mt-4">Flex Penang – Intern (Mar 2023 – Sep 2023)</h3>
+            <ul className="list-disc list-inside">
+              <li>Developed 3 solo tools to improve production efficiency</li>
+              <li>Built web dashboard for management reporting</li>
+            </ul>
+          </div>
+
+          <div className="mt-6">
+            <h2 className="text-xl font-semibold">Final Year Project</h2>
+            <p>
+              USM Bus Buddy – Developed a campus bus tracking system with real-time location and AI ETA predictions using TensorFlow.
+              Integrated model into mobile app using TensorFlow Lite.
+            </p>
+          </div>
+
+          <div className="mt-6">
+            <h2 className="text-xl font-semibold">Education</h2>
+            <p>BSc. Computer Science (AI Major), Universiti Sains Malaysia (2020–2024) – CGPA: 3.11</p>
+            <p>Gold Award – Final Year Project</p>
+          </div>
+
+          <div className="mt-6">
+            <h2 className="text-xl font-semibold">Languages</h2>
+            <p>English (Fluent), Bahasa Melayu (Fluent), Tamil (Native)</p>
+          </div>
+
+          <div className="mt-6">
+            <h2 className="text-xl font-semibold">Reference</h2>
+            <p>Dr. Sukumar Letchumunan – USM | 📞 +6010-3664173 | ✉️ sukumar@usm.my</p>
+          </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    </>
+  )
 }
