@@ -26,7 +26,7 @@ export default function Home() {
           <div className="mt-6">
             <h2 className="text-xl font-semibold">Profile</h2>
             <p>
-              AI-focused graduate with a Bachelor's in Intelligent Computing (USM). Delivered real-time automation tools,
+              AI-focused graduate with a Bachelor&apos;s in Intelligent Computing (USM). Delivered real-time automation tools,
               AI vision systems, and robust backend solutions at Jabil and Flex. Seeking software roles in Singapore or remote
               teams to innovate and solve high-impact problems.
             </p>
